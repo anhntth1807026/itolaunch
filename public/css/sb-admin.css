@@ -161,14 +161,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #4caf50;
 }
 
 a:not([href]):not([tabindex]) {
@@ -2009,6 +2008,10 @@ pre code {
   border: 0;
 }
 
+.mar{
+  margin-top: 13px;
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -2603,9 +2606,9 @@ textarea.form-control {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn.disabled, .btn:disabled {
-  opacity: 0.65;
-}
+/*.btn.disabled, .btn:disabled {*/
+/*  opacity: 0.65;*/
+/*}*/
 
 a.btn.disabled,
 fieldset:disabled a.btn {
