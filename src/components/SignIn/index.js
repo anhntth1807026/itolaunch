@@ -1,82 +1,96 @@
-import React, {Component} from 'react';
-import {Link, withRouter} from 'react-router-dom';
-import {compose} from 'recompose';
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { compose } from 'recompose';
 import './signin.css'
 
-import {SignUpLink} from '../SignUp';
-import {PasswordForgetLink} from '../PasswordForget';
-import {withFirebase} from '../Firebase';
-import * as ROUTES from '../constants/routes';
+
+import { SignUpLink } from '../SignUp';
+import { PasswordForgetLink } from '../PasswordForget';
+import { withFirebase } from '../Firebase';
+import * as ROUTES from '../../constants/routes';
 
 const SignInPage = () => (
-    <div className="body">
-        <SignInForm/>
-    </div>
+  <div>
+    <h1>SignIn</h1>
+    <SignInForm />
+  </div>
 );
 
 const INITIAL_STATE = {
-    email: '',
-    password: '',
-    error: null,
+  email: '',
+  password: '',
+  error: null,
 };
 
+const ERROR_CODE_ACCOUNT_EXISTS =
+  'auth/account-exists-with-different-credential';
+
+const ERROR_MSG_ACCOUNT_EXISTS = `
+  An account with an E-Mail address to
+  this social account already exists. Try to login from
+  this account instead and associate your social accounts on
+  your personal account page.
+`;
+
 class SignInFormBase extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {...INITIAL_STATE};
-    }
+  constructor(props) {
+    super(props);
 
-    onSubmit = event => {
-        const {email, password} = this.state;
-        this.props.firebase
-            .doSignInWithEmailAndPassword(email, password)
-            .then(() => {
-                this.setState({...INITIAL_STATE});
-                this.props.history.push(ROUTES.HOME);
-            })
-            .catch(error => {
-                this.setState({error});
-            });
-        event.preventDefault();
-    };
+    this.state = { ...INITIAL_STATE };
+  }
 
-    onChange = event => {
-        this.setState({[event.target.name]: event.target.value});
-    };
+  onSubmit = event => {
+    const { email, password } = this.state;
 
-    render() {
-        const {email, password, error} = this.state;
+    this.props.firebase
+      .doSignInWithEmailAndPassword(email, password)
+      .then(() => {
+        this.setState({ ...INITIAL_STATE });
+        this.props.history.push(ROUTES.HOME);
+      })
+      .catch(error => {
+        this.setState({ error });
+      });
 
-        const isInvalid = password === '' || email === '';
+    event.preventDefault();
+  };
 
-        return (
-            <form className="login-box" onSubmit={this.onSubmit}>
-                <h1>Login</h1>
-                <div className="signin-box">
-                    <input type="text" placeholder="Enter Email" name="email" value={email} onChange={this.onChange}
-                           style={{color: 'white'}}/>
-                </div>
+  onChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
-                <div className="signin-box">
-                    <input type="password" placeholder="Enter Password" name="password" value={password}
-                           onChange={this.onChange}/>
-                </div>
-                <div className="button-content">
-                    <PasswordForgetLink/>
-                </div>
-                <button disabled={isInvalid} className="btn" type="submit">Sign In</button>
-                <div className="btn"><SignUpLink/></div>
-                {error && <p>{error.message}</p>}
-            </form>
-        );
-    }
+  render() {
+    const { email, password, error } = this.state;
+
+    const isInvalid = password === '' || email === '';
+
+    return (
+      <form className="login-box" onSubmit={this.onSubmit}>
+        <h1>Login</h1>
+        <div className="signin-box">
+          <input type="text" placeholder="Enter Email" name="email" value={email} onChange={this.onChange}
+                 style={{color: 'white'}}/>
+        </div>
+
+        <div className="signin-box">
+          <input type="password" placeholder="Enter Password" name="password" value={password}
+                 onChange={this.onChange}/>
+        </div>
+        <div className="button-content">
+          <PasswordForgetLink/>
+        </div>
+        <button disabled={isInvalid} className="btn" type="submit">Sign In</button>
+        <div className="btn"><SignUpLink/></div>
+        {error && <p>{error.message}</p>}
+      </form>
+    );
+  }
 }
 
-const SignInLink = () => (
-    <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-);
-
-const SignInForm = compose(withRouter, withFirebase,)(SignInFormBase);
+const SignInForm = compose(
+  withRouter,
+  withFirebase,
+)(SignInFormBase);
 
 export default SignInPage;
-export {SignInForm, SignInLink};
+
