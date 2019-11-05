@@ -11,7 +11,7 @@ const Navigation = ({ authUser }) => (
 const NavigationAuth = () => (
     <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark static-top">
-            <a className="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
+            <a className="navbar-brand mr-1" href="index.html">Itolaunch</a>
             {/* Navbar Search */}
             <form className="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                 <div className="input-group">
