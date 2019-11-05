@@ -30,9 +30,10 @@ class SignInFormBase extends Component {
         const {email, password} = this.state;
         this.props.firebase
             .doSignInWithEmailAndPassword(email, password)
-            .then(() => {
+            .then(ref => {
                 this.setState({...INITIAL_STATE});
                 this.props.history.push(ROUTES.HOME);
+            console.log('token user: ', ref.user.refreshToken);
             })
             .catch(error => {
                 this.setState({error});
