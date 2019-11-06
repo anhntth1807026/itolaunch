@@ -33,58 +33,56 @@ const ERROR_MSG_ACCOUNT_EXISTS = `
 `;
 
 class SignInFormBase extends Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
+        this.state = {...INITIAL_STATE};
+    }
 
-    this.state = { ...INITIAL_STATE };
-  }
+    onSubmit = event => {
+        const {email, password} = this.state;
+        this.props.firebase
+            .doSignInWithEmailAndPassword(email, password)
+            .then(ref => {
+                this.setState({...INITIAL_STATE});
+                this.props.history.push(ROUTES.HOME);
+            console.log('token user: ', ref.user.refreshToken);
+            })
+            .catch(error => {
+                this.setState({error});
+            });
+        event.preventDefault();
+    };
 
-  onSubmit = event => {
-    const { email, password } = this.state;
+    onChange = event => {
+        this.setState({[event.target.name]: event.target.value});
+    };
 
-    this.props.firebase
-      .doSignInWithEmailAndPassword(email, password)
-      .then(() => {
-        this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.HOME);
-      })
-      .catch(error => {
-        this.setState({ error });
-      });
+    render() {
+        const {email, password, error} = this.state;
 
-    event.preventDefault();
-  };
+        const isInvalid = password === '' || email === '';
 
-  onChange = event => {
-    this.setState({ [event.target.name]: event.target.value });
-  };
+        return (
+            <form className="login-box" onSubmit={this.onSubmit}>
+                <h1>Login</h1>
+                <div className="signin-box">
+                    <input type="text" placeholder="Enter Email" name="email" value={email} onChange={this.onChange}
+                           style={{color: 'white'}}/>
+                </div>
 
-  render() {
-    const { email, password, error } = this.state;
-
-    const isInvalid = password === '' || email === '';
-
-    return (
-      <form className="login-box" onSubmit={this.onSubmit}>
-        <h1>Login</h1>
-        <div className="signin-box">
-          <input type="text" placeholder="Enter Email" name="email" value={email} onChange={this.onChange}
-                 style={{color: 'white'}}/>
-        </div>
-
-        <div className="signin-box">
-          <input type="password" placeholder="Enter Password" name="password" value={password}
-                 onChange={this.onChange}/>
-        </div>
-        <div className="button-content">
-          <PasswordForgetLink/>
-        </div>
-        <button disabled={isInvalid} className="btn" type="submit">Sign In</button>
-        <div className="btn"><SignUpLink/></div>
-        {error && <p>{error.message}</p>}
-      </form>
-    );
-  }
+                <div className="signin-box">
+                    <input type="password" placeholder="Enter Password" name="password" value={password}
+                           onChange={this.onChange}/>
+                </div>
+                <div className="button-content">
+                    <PasswordForgetLink/>
+                </div>
+                <button disabled={isInvalid} className="btn" type="submit">Sign In</button>
+                <div className="btn"><SignUpLink/></div>
+                {error && <p>{error.message}</p>}
+            </form>
+        );
+    }
 }
 
 const SignInForm = compose(
