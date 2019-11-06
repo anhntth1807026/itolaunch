@@ -3,108 +3,105 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const config = {
-    apiKey: "AIzaSyCsqo0XkzCUYuZfBO9lZVH57lpZQ_GvIKw",
-    authDomain: "confident-key-255202.firebaseapp.com",
-    databaseURL: "https://confident-key-255202.firebaseio.com",
-    projectId: "confident-key-255202",
-    storageBucket: "confident-key-255202.appspot.com",
-    messagingSenderId: "1052324852327",
-    appId: "1:1052324852327:web:6d8623bd8269d046e81ac2",
-    measurementId: "G-P94D57SZKZ"
+  apiKey: "AIzaSyCsqo0XkzCUYuZfBO9lZVH57lpZQ_GvIKw",
+  authDomain: "confident-key-255202.firebaseapp.com",
+  databaseURL: "https://confident-key-255202.firebaseio.com",
+  projectId: "confident-key-255202",
+  storageBucket: "confident-key-255202.appspot.com",
+  messagingSenderId: "1052324852327",
+  appId: "1:1052324852327:web:6d8623bd8269d046e81ac2",
+  measurementId: "G-P94D57SZKZ"
 };
 
 class Firebase {
-    constructor() {
-        app.initializeApp(config);
+  constructor() {
+    app.initializeApp(config);
 
-        /* Helper */
+    /* Helper */
 
-        this.fieldValue = app.firestore.FieldValue;
-        this.emailAuthProvider = app.auth.EmailAuthProvider;
+    this.fieldValue = app.firestore.FieldValue;
+    this.emailAuthProvider = app.auth.EmailAuthProvider;
 
-        /* Firebase APIs */
+    /* Firebase APIs */
 
-        this.auth = app.auth();
-        this.db = app.firestore();
+    this.auth = app.auth();
+    this.db = app.firestore();
 
-        /* Social Sign In Method Provider */
+    /* Social Sign In Method Provider */
 
-        this.googleProvider = new app.auth.GoogleAuthProvider();
-        this.facebookProvider = new app.auth.FacebookAuthProvider();
-        this.twitterProvider = new app.auth.TwitterAuthProvider();
-    }
+    this.googleProvider = new app.auth.GoogleAuthProvider();
+    this.facebookProvider = new app.auth.FacebookAuthProvider();
+    this.twitterProvider = new app.auth.TwitterAuthProvider();
+  }
 
-    // *** Auth API ***
+  // *** Auth API ***
 
-    doCreateUserWithEmailAndPassword = (email, password) =>
-        this.auth.createUserWithEmailAndPassword(email, password);
+  doCreateUserWithEmailAndPassword = (email, password) =>
+    this.auth.createUserWithEmailAndPassword(email, password);
 
-    doSignInWithEmailAndPassword = (email, password) =>
-        this.auth.signInWithEmailAndPassword(email, password);
+  doSignInWithEmailAndPassword = (email, password) =>
+    this.auth.signInWithEmailAndPassword(email, password);
 
-    doSignInWithGoogle = () =>
-        this.auth.signInWithPopup(this.googleProvider);
+  doSignInWithGoogle = () =>
+    this.auth.signInWithPopup(this.googleProvider);
 
-    doSignInWithFacebook = () =>
-        this.auth.signInWithPopup(this.facebookProvider);
+  doSignInWithFacebook = () =>
+    this.auth.signInWithPopup(this.facebookProvider);
 
-    doSignInWithTwitter = () =>
-        this.auth.signInWithPopup(this.twitterProvider);
+  doSignInWithTwitter = () =>
+    this.auth.signInWithPopup(this.twitterProvider);
 
-    doSignOut = () => this.auth.signOut();
+  doSignOut = () => this.auth.signOut();
 
-    doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
+  doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
 
-    doSendEmailVerification = () =>
-        this.auth.currentUser.sendEmailVerification({
-            url: process.env.REACT_APP_CONFIRMATION_EMAIL_REDIRECT,
-        });
+  doSendEmailVerification = () =>
+    this.auth.currentUser.sendEmailVerification({
+      url: process.env.REACT_APP_CONFIRMATION_EMAIL_REDIRECT,
+    });
 
-    doPasswordUpdate = password =>
-        this.auth.currentUser.updatePassword(password);
+  doPasswordUpdate = password =>
+    this.auth.currentUser.updatePassword(password);
 
-    // *** Merge Auth and DB User API *** //
+  // *** Merge Auth and DB User API *** //
 
-    // onAuthUserListener = (next, fallback) =>
-    //     this.auth.onAuthStateChanged(authUser => {
-    //         if (authUser) {
-    //             this.user(authUser.uid)
-    //                 .get()
-    //                 .then(snapshot => {
-    //                     const dbUser = snapshot.data();
-    //
-    //                     // default empty roles
-    //                     if (!dbUser.roles) {
-    //                         dbUser.roles = {};
-    //                     }
-    //
-    //                     // merge auth and db user
-    //                     authUser = {
-    //                         uid: authUser.uid,
-    //                         email: authUser.email,
-    //                         emailVerified: authUser.emailVerified,
-    //                         providerData: authUser.providerData,
-    //                         ...dbUser,
-    //                     };
-    //
-    //                     next(authUser);
-    //                 });
-    //         } else {
-    //             fallback();
-    //         }
-    //     });
+  onAuthUserListener = (next, fallback) =>
+    this.auth.onAuthStateChanged(authUser => {
+      if (authUser) {
+        this.user(authUser.uid)
+          .get()
+          .then(snapshot => {
+            const dbUser = snapshot.data();
 
-    // *** User API ***
+            // default empty role
 
-    user = uid => this.db.doc(`users/${uid}`);
+            // merge auth and db user
+            authUser = {
+              uid: authUser.uid,
+              email: authUser.email,
+              emailVerified: authUser.emailVerified,
+              providerData: authUser.providerData,
+              ...dbUser,
+            };
 
-    users = () => this.db.collection('users');
+            next(authUser);
+          });
+      } else {
+        fallback();
+      }
+    });
 
-    // *** Message API ***
+  // *** User API ***
 
-    message = uid => this.db.doc(`messages/${uid}`);
+  user = uid => this.db.doc(`users/${uid}`);
 
-    messages = () => this.db.collection('messages');
+  users = () => this.db.collection('users');
+
+  // *** Message API ***
+
+  message = uid => this.db.doc(`messages/${uid}`);
+
+  messages = () => this.db.collection('messages');
 }
 
 export default Firebase;

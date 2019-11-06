@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import * as firebase from "firebase";
+import { compose } from 'recompose';
+import { withAuthorization } from '../Session';
 
 class HomePage extends Component {
     constructor(props) {
@@ -115,231 +117,8 @@ class HomePage extends Component {
                                                     <td>Tether USD</td>
                                                     <td>USDT</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tetherr USDd</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tether USD</td>
-                                                    <td>USDT</td>
-                                                </tr>
-                                                </tbody>
+       
+                                               </tbody>
                                             </table>
                                         </div>
                                     </div>
@@ -347,1367 +126,206 @@ class HomePage extends Component {
                                 </div>
                             </div>
 
-                        </div>
+        {/*Transactions Data Table*/}
+        <div id="transactiontable">
+          <div id="transactions">
+            <div className="container-fluid">
 
-                        {/*Transactions Data Table*/}
-                        <div id="transactiontable">
-                            <div id="transactions">
-                                <div className="container-fluid">
-                                    <div className="card mb-3">
-                                        <div className="card-header">
-                                            <i className="fas fa-table"/>
-                                            Transaction Data Table
-                                        </div>
-                                        <div className="card-body">
-                                            <div className="table-responsive">
-                                                <table className="table table-bordered" id="dataTable" width="100%"
-                                                       cellSpacing={0}>
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Amount</th>
-                                                        <th>Create</th>
-                                                        <th>From</th>
-                                                        <th>Id</th>
-                                                        <th>To</th>
-                                                        <th>UpdatedAt</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tfoot>
-                                                    <tr>
-                                                        <th>Amount</th>
-                                                        <th>Create</th>
-                                                        <th>From</th>
-                                                        <th>Id</th>
-                                                        <th>To</th>
-                                                        <th>UpdatedAt</th>
-                                                    </tr>
-                                                    </tfoot>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0</td>
-                                                        <td>1572838263</td>
-                                                        <td>0x5a7ade1863e2497fca323b96b</td>
-                                                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
-                                                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
-                                                        <td>1572840990</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-                                    </div>
-                                </div>
-                                {/* /.container-fluid */}
-                                {/* Sticky Footer */}
-                                <footer className="sticky-footer">
-                                    <div className="container my-auto">
-                                        <div className="copyright text-center my-auto">
-                                            <span>Copyright © My Website 2019</span>
-                                        </div>
-                                    </div>
-                                </footer>
-                            </div>
-                        </div>
+              {/* Breadcrumbs*/}
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item">
+                  <a href="#">Dashboard</a>
+                </li>
+                <li className="breadcrumb-item active">Transaction</li>
+                <li className="breadcrumb-item active">Document</li>
+              </ol>
 
-                        {/*Users Data Table*/}
-                        <div id="usertable">
-                            <div className="container-fluid">
-                                <div className="card mb-3">
-                                    <div className="card-header">
-                                        <i className="fas fa-table"/>
-                                        Users Data Table
-                                    </div>
-                                    <div className="card-body">
-                                        <div className="table-responsive">
-                                            <table className="table table-bordered" id="dataTable" width="100%"
-                                                   cellSpacing={0}>
-                                                <thead>
-                                                <tr>
-                                                    <th>Code</th>
-                                                    <th>CreateAt</th>
-                                                    <th>Email</th>
-                                                    <th>Email Verified</th>
-                                                    <th>First Name</th>
-                                                    <th>Last Name</th>
-                                                    <th>Phone</th>
-                                                    <th>Sponsor</th>
-                                                    <th>STT</th>
-                                                    <th>Uid</th>
-                                                    <th>UpdateAt</th>
-                                                </tr>
-                                                </thead>
-                                                <tfoot>
-                                                <tr>
-                                                    <th>Code</th>
-                                                    <th>CreateAt</th>
-                                                    <th>Email</th>
-                                                    <th>Email Verified</th>
-                                                    <th>First Name</th>
-                                                    <th>Last Name</th>
-                                                    <th>Phone</th>
-                                                    <th>Sponsor</th>
-                                                    <th>STT</th>
-                                                    <th>Uid</th>
-                                                    <th>UpdateAt</th>
-                                                </tr>
-                                                </tfoot>
-                                                <tbody>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>1572838887802</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>le</td>
-                                                    <td>xuan</td>
-                                                    <td>0989773866</td>
-                                                    <td>...</td>
-                                                    <td>false</td>
-                                                    <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
-                                                    <td>1572838887802</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1001</td>
-                                                    <td>1572859116244</td>
-                                                    <td>chaule5593@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>chau</td>
-                                                    <td>le</td>
-                                                    <td>0989773866</td>
-                                                    <td>lexuanduy07@gmail.com</td>
-                                                    <td>false</td>
-                                                    <td>Fc45wnjdu0RmbpEMOEGCkHMx6dU2</td>
-                                                    <td>1572859116244</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div className="card-footer small text-muted">Updated yesterday at 11:59 PM
-                                    </div>
-                                </div>
-                                {/* /.container-fluid */}
-                                {/* Sticky Footer */}
-                                <footer className="sticky-footer">
-                                    <div className="container my-auto">
-                                        <div className="copyright text-center my-auto">
-                                            <span>Copyright © My Website 2019</span>
-                                        </div>
-                                    </div>
-                                </footer>
-                            </div>
-                        </div>
-
-                        {/* Sticky Footer */}
-                        <footer className="sticky-footer">
-                            <div className="container my-auto">
-                                <div className="copyright text-center my-auto">
-                                    <span>Copyright © My Website 2019</span>
-                                </div>
-                            </div>
-                        </footer>
-                    </div>
-                    {/* /.content-wrapper */}
+              <div className="card mb-3">
+                <div className="card-header">
+                  <i className="fas fa-table"/>
+                  Transaction Data Table
                 </div>
-                {/* /#wrapper */}
-
-                {/* Scroll to Top Button*/}
-                {/*<a className="scroll-to-top rounded" href="#page-top">*/}
-                {/*    <i className="fas fa-angle-up"/>*/}
-                {/*</a>*/}
-
-                {/* Logout Modal*/}
-                <div className="modal fade" id="logoutModal" tabIndex={-1} role="dialog"
-                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog" role="document">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                                <button className="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div className="modal-body">Select "Logout" below if you are ready to end your current
-                                session.
-                            </div>
-                            <div className="modal-footer">
-                                <button className="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                <a className="btn btn-primary" href="login.html">Logout</a>
-                            </div>
-                        </div>
-                    </div>
+                <div className="card-body">
+                  <div className="table-responsive">
+                    <table className="table table-bordered" id="" width="100%"
+                           cellSpacing={0}>
+                      <thead>
+                      <tr>
+                        <th>Amount</th>
+                        <th>Create</th>
+                        <th>From</th>
+                        <th>Id</th>
+                        <th>To</th>
+                        <th>UpdatedAt</th>
+                      </tr>
+                      </thead>
+                      <tfoot>
+                      <tr>
+                        <th>Amount</th>
+                        <th>Create</th>
+                        <th>From</th>
+                        <th>Id</th>
+                        <th>To</th>
+                        <th>UpdatedAt</th>
+                      </tr>
+                      </tfoot>
+                      <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>1572838263</td>
+                        <td>0x5a7ade1863e2497fca323b96b</td>
+                        <td>0xd23ca7d826b909de5f2fd52f467a3d6a3a25cfd7daec955cbbd985a81a1471d1</td>
+                        <td>0x510e5c60006b98dbcf783e8d0124f45301598f09</td>
+                        <td>1572840990</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
+                <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
             </div>
-        );
-    }
-}
+            {/* /.container-fluid */}
+            {/* Sticky Footer */}
+            <footer className="sticky-footer">
+              <div className="container my-auto">
+                <div className="copyright text-center my-auto">
+                  <span>Copyright © My Website 2019</span>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
 
-export default HomePage;
+        {/*Users Data Table*/}
+        <div id="usertable">
+          <div className="container-fluid">
+
+            {/* Breadcrumbs*/}
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item">
+                <a href="#">Dashboard</a>
+              </li>
+              <li className="breadcrumb-item active">Users Data</li>
+              <li className="breadcrumb-item active">Document</li>
+            </ol>
+
+            <div className="card mb-3">
+              <div className="card-header">
+                <i className="fas fa-table"/>
+                Users Data Table
+              </div>
+              <div className="card-body">
+                <div className="table-responsive">
+                  <table className="table table-bordered" id="dataTable" width="100%"
+                         cellSpacing={0}>
+                    <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>CreateAt</th>
+                      <th>Email</th>
+                      <th>Email Verified</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Phone</th>
+                      <th>Sponsor</th>
+                      <th>STT</th>
+                      <th>Uid</th>
+                      <th>UpdateAt</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                      <th>Code</th>
+                      <th>CreateAt</th>
+                      <th>Email</th>
+                      <th>Email Verified</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Phone</th>
+                      <th>Sponsor</th>
+                      <th>STT</th>
+                      <th>Uid</th>
+                      <th>UpdateAt</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                      <td>1000</td>
+                      <td>1572838887802</td>
+                      <td>lexuanduy07@gmail.com</td>
+                      <td>false</td>
+                      <td>le</td>
+                      <td>xuan</td>
+                      <td>0989773866</td>
+                      <td>...</td>
+                      <td>false</td>
+                      <td>m9eVzRmgE9ezRAh4ab8sWpNubP12</td>
+                      <td>1572838887802</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className="card-footer small text-muted">Updated yesterday at 11:59 PM
+              </div>
+            </div>
+            {/* /.container-fluid */}
+            {/* Sticky Footer */}
+            <footer className="sticky-footer">
+              <div className="container my-auto">
+                <div className="copyright text-center my-auto">
+                  <span>Copyright © My Website 2019</span>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+        {/* Sticky Footer */}
+        <footer className="sticky-footer">
+          <div className="container my-auto">
+            <div className="copyright text-center my-auto">
+              <span>Copyright © My Website 2019</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+      {/* /.content-wrapper */}
+    </div>
+    {/* /#wrapper */}
+
+    {/* Scroll to Top Button*/}
+    {/*<a className="scroll-to-top rounded" href="#page-top">*/}
+    {/*    <i className="fas fa-angle-up"/>*/}
+    {/*</a>*/}
+
+    {/* Logout Modal*/}
+    <div className="modal fade" id="logoutModal" tabIndex={-1} role="dialog"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal-dialog" role="document">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div className="modal-body">Select "Logout" below if you are ready to end your current
+            session.
+          </div>
+          <div className="modal-footer">
+            <button className="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a className="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const condition = authUser => !!authUser;
+
+export default compose(
+  withAuthorization(condition),
+)(HomePage);
