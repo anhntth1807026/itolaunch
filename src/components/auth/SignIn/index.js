@@ -1,29 +1,28 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import { compose } from 'recompose';
-import './signin.css'
+import React, {Component} from 'react';
+import {withRouter} from 'react-router-dom';
+import {compose} from 'recompose';
+import '../../../component-css/signin.css'
 
 
-import { SignUpLink } from '../SignUp';
-import { PasswordForgetLink } from '../PasswordForget';
-import { withFirebase } from '../Firebase';
-import * as ROUTES from '../../constants/routes';
+import {SignUpLink} from '../SignUp';
+import {PasswordForgetLink} from '../PasswordForget';
+import {withFirebase} from '../../Firebase';
+import * as ROUTES from '../../../constants/routes';
 
 const SignInPage = () => (
-  <div>
-    <h1>SignIn</h1>
-    <SignInForm />
-  </div>
+    <div>
+        <SignInForm/>
+    </div>
 );
 
 const INITIAL_STATE = {
-  email: '',
-  password: '',
-  error: null,
+    email: '',
+    password: '',
+    error: null,
 };
 
 const ERROR_CODE_ACCOUNT_EXISTS =
-  'auth/account-exists-with-different-credential';
+    'auth/account-exists-with-different-credential';
 
 const ERROR_MSG_ACCOUNT_EXISTS = `
   An account with an E-Mail address to
@@ -45,7 +44,7 @@ class SignInFormBase extends Component {
             .then(ref => {
                 this.setState({...INITIAL_STATE});
                 this.props.history.push(ROUTES.HOME);
-            console.log('token user: ', ref.user.refreshToken);
+                console.log('token user: ', ref.user.refreshToken);
             })
             .catch(error => {
                 this.setState({error});
@@ -86,8 +85,8 @@ class SignInFormBase extends Component {
 }
 
 const SignInForm = compose(
-  withRouter,
-  withFirebase,
+    withRouter,
+    withFirebase,
 )(SignInFormBase);
 
 export default SignInPage;

@@ -1,38 +1,37 @@
 import React, {Component} from 'react';
-import * as firebase from "firebase";
 import {compose} from 'recompose';
-import {withAuthorization} from '../Session';
+import {withAuthorization} from '../../auth/Session';
 
 class HomePage extends Component {
-    constructor(props) {
-        super(props);
-
-        // setTimeout(function(){ console.log(firebase.auth().currentUser); }, 3000);
-
-        // firebase.auth().onAuthStateChanged(function(user) {
-        //     if (user) {
-        //         console.log('user logined: ', user.email);
-        //
-        //     } else {
-        //         console.log('user not login');
-        //     }
-        // });
-        var clearABC = setInterval(function () {
-            if (firebase.auth().currentUser != null) {
-                clearInterval(clearABC);
-                firebase.auth().currentUser.getIdToken(true)
-                    .then(a => {
-                        console.log(a);
-                        this.tokenKey = a;
-                    }).catch(function (error) {
-                    // Handle error
-                    console.log('get token error: ', error);
-                });
-            }
-        }, 50);
-        console.log(firebase.auth().currentUser)
-
-    }
+    // constructor(props) {
+    //     super(props);
+    //
+    //     // setTimeout(function(){ console.log(firebase.auth().currentUser); }, 3000);
+    //
+    //     // firebase.auth().onAuthStateChanged(function(user) {
+    //     //     if (user) {
+    //     //         console.log('user logined: ', user.email);
+    //     //
+    //     //     } else {
+    //     //         console.log('user not login');
+    //     //     }
+    //     // });
+    //     var clearABC = setInterval(function () {
+    //         if (firebase.auth().currentUser != null) {
+    //             clearInterval(clearABC);
+    //             firebase.auth().currentUser.getIdToken(true)
+    //                 .then(a => {
+    //                     console.log(a);
+    //                     this.tokenKey = a;
+    //                 }).catch(function (error) {
+    //                 // Handle error
+    //                 console.log('get token error: ', error);
+    //             });
+    //         }
+    //     }, 50);
+    //     console.log(firebase.auth().currentUser)
+    //
+    // }
 
     render() {
         return (

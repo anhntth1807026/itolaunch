@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { AuthUserContext } from '../Session';
-import SignOutButton from '../SignOut';
+import { AuthUserContext } from '../auth/Session';
+import SignOutButton from '../auth/SignOut';
 import * as ROUTES from '../../constants/routes';
 
 const Navigation = () => (
@@ -21,7 +21,7 @@ const NavigationAuth = ({ authUser }) => (
   <div>
 
     <nav className="navbar navbar-expand navbar-dark bg-dark static-top">
-      <a className="navbar-brand mr-1" href="index. html">
+      <a className="navbar-brand mr-1" href="#">
         Start Bootstrap
       </a>
       {/* Navbar Search */}
