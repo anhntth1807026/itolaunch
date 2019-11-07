@@ -45,7 +45,7 @@ class TransactionDataTable extends Component {
                     {/* Sidebar */}
                     <ul className="sidebar navbar-nav">
                         <li className="nav-item active">
-                            <a className="nav-link" href="index.js">
+                            <a className="nav-link" href="#">
                                 <i className="fas fa-fw fa-tachometer-alt"/>
                                 <span>Dashboard</span>
                             </a>
