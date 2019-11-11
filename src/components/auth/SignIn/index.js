@@ -43,7 +43,15 @@ class SignInFormBase extends Component {
             .doSignInWithEmailAndPassword(email, password)
             .then(ref => {
                 this.setState({...INITIAL_STATE});
-                this.props.history.push(ROUTES.HOME);
+                //
+                // this.props.history.push(ROUTES.HOME);
+                ref.user.getIdToken(true).then(a => {
+                    console.log("tổ kén: " + a);
+                    // tslint:disable-next-line:only-arrow-functions
+                }).catch(function (error) {
+                    // Handle error
+                    console.log('get token error: ', error);
+                });
                 console.log('token user: ', ref.user.refreshToken);
             })
             .catch(error => {

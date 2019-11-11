@@ -3,12 +3,13 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const config = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    apiKey: "AIzaSyArxkkLuSAeKSLMr0QakylgpXy9voRuXug",
+    authDomain: "itolaunch.firebaseapp.com",
+    databaseURL: "https://itolaunch.firebaseio.com",
+    projectId: "itolaunch",
+    storageBucket: "itolaunch.appspot.com",
+    messagingSenderId: "448114930516",
+    appId: "1:448114930516:web:5c3145c2dae6fe968d8ec1"
 };
 
 class Firebase {
@@ -40,14 +41,14 @@ class Firebase {
     doSignInWithEmailAndPassword = (email, password) =>
         this.auth.signInWithEmailAndPassword(email, password);
 
-    doSignInWithGoogle = () =>
-        this.auth.signInWithPopup(this.googleProvider);
-
-    doSignInWithFacebook = () =>
-        this.auth.signInWithPopup(this.facebookProvider);
-
-    doSignInWithTwitter = () =>
-        this.auth.signInWithPopup(this.twitterProvider);
+    // doSignInWithGoogle = () =>
+    //     this.auth.signInWithPopup(this.googleProvider);
+    //
+    // doSignInWithFacebook = () =>
+    //     this.auth.signInWithPopup(this.facebookProvider);
+    //
+    // doSignInWithTwitter = () =>
+    //     this.auth.signInWithPopup(this.twitterProvider);
 
     doSignOut = () => this.auth.signOut();
 

@@ -13,7 +13,10 @@ const SignUpPage = () => (
 );
 
 const INITIAL_STATE = {
-    username: '',
+    firstname: '',
+    lastname: '',
+    phone: '',
+    sponsor: '',
     email: '',
     passwordOne: '',
     passwordTwo: '',
@@ -21,7 +24,6 @@ const INITIAL_STATE = {
 };
 
 const ERROR_CODE_ACCOUNT_EXISTS = 'auth/email-already-in-use';
-
 const ERROR_MSG_ACCOUNT_EXISTS = `
   An account with this E-Mail address already exists.
   Try to login with this account instead. If you think the
@@ -38,7 +40,7 @@ class SignUpFormBase extends Component {
     }
 
     onSubmit = event => {
-        const {username, email, passwordOne} = this.state;
+        const {firstname, lastname, phone, sponsor, email, passwordOne} = this.state;
 
         this.props.firebase
             .doCreateUserWithEmailAndPassword(email, passwordOne)
@@ -46,8 +48,9 @@ class SignUpFormBase extends Component {
                 // Create a user in your Firebase realtime database
                 return this.props.firebase.user(authUser.user.uid).set(
                     {
-                        username,
-                        email,
+                        firstname, lastname,
+                        phone, sponsor,
+                        email, passwordOne,
                     },
                     {merge: true},
                 );
@@ -80,7 +83,10 @@ class SignUpFormBase extends Component {
 
     render() {
         const {
-            username,
+            firstname,
+            lastname,
+            phone,
+            sponsor,
             email,
             isAdmin,
             passwordOne,
@@ -92,14 +98,33 @@ class SignUpFormBase extends Component {
             passwordOne !== passwordTwo ||
             passwordOne === '' ||
             email === '' ||
-            username === '';
+            firstname === ''||
+            lastname === ''||
+            phone === ''||
+            sponsor === '';
+
 
         return (
             <form className="signup-box" onSubmit={this.onSubmit}>
                 <h1>Sign Up</h1>
                 <div className="signup-textbox">
-                    <input name="username" value={username} onChange={this.onChange} type="text"
-                           placeholder="Enter Full Name" style={{color: 'white'}}/>
+                    <input name="firstname" value={firstname} onChange={this.onChange} type="text"
+                           placeholder="Enter First Name" style={{color: 'white'}}/>
+                </div>
+
+                <div className="signup-textbox">
+                    <input name="lastname" value={lastname} onChange={this.onChange} type="text"
+                           placeholder="Enter Last Name" style={{color: 'white'}}/>
+                </div>
+
+                <div className="signup-textbox">
+                    <input name="phone" value={phone} onChange={this.onChange} type="text"
+                           placeholder="Enter Phone" style={{color: 'white'}}/>
+                </div>
+
+                <div className="signup-textbox">
+                    <input name="sponsor" value={sponsor} onChange={this.onChange} type="text"
+                           placeholder="Enter Sponsor" style={{color: 'white'}}/>
                 </div>
 
                 <div className="signup-textbox">

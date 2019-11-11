@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {compose} from 'recompose';
-import {withAuthorization} from '../../auth/Session';
-
+import {withAuthorization} from '../../auth/Session'
+import * as firebase from "firebase";
 class HomePage extends Component {
     // constructor(props) {
     //     super(props);
